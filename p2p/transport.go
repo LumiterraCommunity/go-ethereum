@@ -156,9 +156,9 @@ func readProtocolHandshake(rw MsgReader) (*protoHandshake, error) {
 	if err != nil {
 		return nil, err
 	}
-	if msg.Size > baseProtocolMaxMsgSize {
-		return nil, fmt.Errorf("message too big")
-	}
+	// if msg.Size > baseProtocolMaxMsgSize {
+	// 	return nil, fmt.Errorf("message too big")
+	// }
 	if msg.Code == discMsg {
 		// Disconnect before protocol handshake is valid according to the
 		// spec and we send it ourself if the post-handshake checks fail.
