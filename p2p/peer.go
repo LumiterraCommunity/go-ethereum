@@ -41,7 +41,7 @@ var (
 const (
 	baseProtocolVersion    = 5
 	baseProtocolLength     = uint64(16)
-	baseProtocolMaxMsgSize = 2 * 1024
+	baseProtocolMaxMsgSize = 4 * 1024
 
 	snappyProtocolVersion = 5
 
